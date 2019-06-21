@@ -1,0 +1,23 @@
+{
+  "name": "crdt",
+  "version": "1.0.0",
+  "description": "Distributed File sharing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 -p 8000 public",
+    "compile": "browserify src/app.js -o public/js/app.js -d"
+  },
+  "author": "Alwin",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "http-server": "^0.11.1",
+    "ipfs": "^0.36.3",
+    "y-array": "^10.1.4",
+    "y-ipfs-connector": "^2.3.0",
+    "y-memory": "^8.0.9",
+    "y-text": "^9.5.1",
+    "yjs": "^13.0.0-78"
+  }
+}
